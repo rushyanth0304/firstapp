@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .container {
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 16px;
+        margin: 16px 0;
+      }
+
+      .container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .container img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+
+      .container span {
+        font-size: 20px;
+        margin-right: 15px;
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          text-align: center;
+        }
+        .container img {
+          margin: auto;
+          float: none;
+          display: block;
+        }
+      }
+      .img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #b1b1b1;
+        border-radius: 50%;
+        background-size: cover;
+      }
+      .img1 {
+        background-image: url(./img/admin.jpg);
+      }
+      .img2 {
+        background-image: url(./img/bussiness.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>HTML Testimonials</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
+      eligendi. Et quaerat obcaecati necessitatibus nisi impedit eligendi non
+      assumenda rem in officia odit nulla qui quasi omnis, hic incidunt
+      voluptas. Placeat dolorum velit commodi vel. Eligendi nihil quidem sequi
+      sit.
+    </p>
+
+    <div class="container">
+      <div class="img img1"></div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+    </div>
+
+    <div class="container">
+      <div class="img img2"></div>
+      <p><span>Rebecca Flex.</span> CEO at Company.</p>
+      <p>No one is better than John Doe.</p>
+    </div>
+  </body>
+</html>

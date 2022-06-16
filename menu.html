@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dropdown</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./navbar.css" />
+    <style>
+      body {
+        background: #dedede;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+        background-image: url("./img/menu.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .body {
+        padding: 0 20px;
+      }
+      .body img {
+        width: 100%;
+        max-width: 700px;
+        margin: 20px 0;
+      }
+      .search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input {
+        border: 3px solid whitesmoke;
+        margin: 1px -279px 0px 83px;
+        width: 225px;
+        border-radius: 50px;
+        padding: 8px 10px;
+        background: lightsteelblue;
+        color: white;
+      }
+      .footer {
+        padding: 3px 20px;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer .social {
+        text-align: center;
+        padding-bottom: 25px;
+        color: grey;
+      }
+      .footer .social a {
+        font-size: 24px;
+        color: inherit;
+        border: 1px solid rgba(120, 69, 69, 0.8);
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        text-align: center;
+      }
+      .footer ul {
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-align: center;
+      }
+      .footer ul li a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+      .footer ul li {
+        display: inline-block;
+        padding: 0 15px;
+      }
+      .footer ul li a:hover {
+        opacity: 1;
+      }
+      .footer .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #aaa;
+      }
+      input[type="search"] {
+        margin: 12px 77px 0px 0px;
+      }
+      .fa-cog:before,
+      .fa-gear:before {
+        content: "\f013";
+        display: inline-block;
+        margin: 26px 6px 6px 5px;
+        width: 74px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <nav>
+        <img class="logo" src="./img/logo1.jfif" alt="" />
+        <ul>
+          <li><a href="menu.html">Home</a></li>
+          <li>
+            <a href="">Profile </a>
+            <ul>
+              <li><a href="busnisses.html">Business Directory</a></li>
+              <li><a href="database.html">Database Company</a></li>
+              <li><a href="admin.html">Admin Directory</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Course</a>
+            <ul>
+              <li><a href="java.html">Javascript</a></li>
+              <li><a href="python.html">Python</a></li>
+              <li><a href="bootstrap.html">Bootstarp</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li>
+            <a href="">Testimonials</a>
+            <ul>
+              <li>
+                <a href="./test.html">Link 1</a>
+                <ul>
+                  <li></li>
+                </ul>
+              </li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+          <li><input type="search" placeholder="Search" name="" id="" /></li>
+          <li>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <ul>
+              <li><a href="index.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="footer">
+      <div class="social">
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Service</a>
+        </li>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+      </ul>
+      <p class="copyright">future coders @ 2022</p>
+    </section>
+  </body>
+</html>

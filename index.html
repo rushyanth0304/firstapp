@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loginform</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function myfunction() {
+        var un = document.querySelector("#uname");
+        var pw = document.querySelector("#pw");
+        let name = "rushyanth";
+        let pwd = "1234";
+        if (un.value == name && pw.value == pwd) {
+          // alert("login succes");
+          var a = document.querySelector("a");
+          a.setAttribute("href", "menu.html");
+        } else {
+          console.log(un.value + "," + pw.value);
+          alert("invalid username and password");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Sign In Form</h1>
+      <div class="container">
+        <div class="left">
+          <div class="right">
+            <div class="form1">
+              <form class="myform" method="post">
+                <label>Username</label>
+                <input
+                  type="text"
+                  name="uname"
+                  class="inputText"
+                  id="uname"
+                  placeholder="Username"
+                />
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="pass"
+                  class="inputText"
+                  id="pw"
+                  placeholder="password"
+                />
+                <button class="btn btn primary">
+                  <a href="Login" value="Login" onclick="myfunction()">Login</a>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+

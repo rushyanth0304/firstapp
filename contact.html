@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        outline: none;
+      }
+      section {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(./img/contact.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 360px;
+        background: rgb(1, 12, 12);
+        box-shadow: lightgoldenrodyellow;
+        opacity: 0.6;
+      }
+      .container form {
+        width: 100%;
+        text-align: center;
+        padding: 25px 25px;
+      }
+      form h1 {
+        padding: 0 10px;
+      }
+      form .id {
+        position: relative;
+      }
+      .id {
+        position: absolute;
+        font-size: 20px;
+        transform: translate(-50%);
+      }
+      form input {
+        width: 100%;
+        height: 30px;
+        margin: 16px 150px;
+        border: 1px solid #5c5c5c;
+        border-radius: 3px;
+        background: rgb(250, 250, 210);
+        padding: 0 15px;
+        font-size: 20px;
+      }
+      h1 {
+        color: black;
+      }
+      form textarea {
+        padding: 5px 15px;
+        border: 1px solid #5c5c5c;
+        border-radius: 3px;
+        background: lightgoldenrodyellow;
+        padding: 0 15px;
+        width: 307px;
+        margin: 4px 152px;
+      }
+      button {
+        margin-top: 25px;
+        margin: right;
+        border: none;
+        background: whitesmoke;
+        padding: 10px 0;
+        width: 305px;
+        margin: 11px 156px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <nav>
+        <img class="logo" src="./img/logo1.jfif" alt="" />
+        <ul>
+          <li><a href="menu.html">Home</a></li>
+          <li>
+            <a href="">Profile </a>
+            <ul>
+              <li><a href="">Business Directory</a></li>
+              <li><a href="">Database Company</a></li>
+              <li><a href="">Admin Directory</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Course</a>
+            <ul>
+              <li><a href="java.html">Javascript</a></li>
+              <li><a href="python.html">Python</a></li>
+              <li><a href="bootstrap.html">Bootstarp</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li>
+            <a href="">Testimonials</a>
+            <ul>
+              <li>
+                <a href="">Link 1</a>
+                <ul>
+                  <li>Trainner</li>
+                </ul>
+              </li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section></section>
+    <div class="container">
+      <form action="">
+        <h1>CONTACT US</h1>
+        <div class="id">
+          <input type="text" placeholder="Full Name" />
+        </div>
+        <div class="id">
+          <input type="text" placeholder="Email address" />
+          <textarea
+            name=""
+            id=""
+            cols="15"
+            rows="5"
+            placeholder="Enter your option"
+          ></textarea>
+          <button class="button">submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

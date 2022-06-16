@@ -1,0 +1,66 @@
+.dropdown {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+nav {
+  height: 60px;
+  background: #2c3e50;
+  box-shadow: 0 10px 15px;
+  display: flex;
+}
+.logo {
+  padding: 5px 0 0 80px;
+  width: 150px;
+  height: auto;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  /* float: right; */
+  margin-right: 30px;
+  display: flex;
+}
+nav ul li {
+  background: #2c3e50;
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 0 15px;
+  color: whitesmoke;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 15px;
+}
+nav ul li a:hover {
+  background: rgb(69, 61, 144);
+}
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  display: none;
+  font: size 5px;
+}
+nav ul ul a {
+  font-size: 10px;
+  background: #242e3c;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul li {
+  width: 210px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
